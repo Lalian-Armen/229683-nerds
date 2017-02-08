@@ -3,158 +3,173 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
 	<!--  Центровщик -->
 	<div class="container">
-		<div class="header-logo">
-			<a href="index.html"><img src="img/nerds-logo.png" alt="Nerds"></a>
-		</div>
 		<nav class="top-menu">
-			<ul>
-				<li class="menu-item active"><a href="index.html">Студия</a></li>
-				<li class="menu-item"><a href="pages/customers.html">Клиенты</a></li>
-				<li class="menu-item"><a href="pages/market.html">Магазин</a></li>
-				<li class="menu-item"><a href="pages/contact.html">Контакты</a></li>
+			<a class="top-menu-logo"><img src="img/nerds-logo.png" alt="Nerds" width="160" height="65"></a>
+			<ul class="top-menu-list clearfix">
+				<li class="top-menu-item"><a class="active">Студия</a></li>
+				<li class="top-menu-item"><a href="pages/customers.html">Клиенты</a></li>
+				<li class="top-menu-item"><a href="pages/market.html">Магазин</a></li>
+				<li class="top-menu-item"><a href="pages/contact.html">Контакты</a></li>
 			</ul>
+			<div class="top-menu-basket">
+				<a href="#">Корзина</a>
+			</div>
 		</nav>
-		<!-- /.top-menu -->
-		<div class="basket">
-			<a href="#">Корзина</a>
-		</div>
-		<!-- /.basket -->
 		<div class="slider">
-			<div class="slider-1">
-				<h2 class="slider-title">Долго, дорого, курпулезно</h2>
-				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-				<a href="#">Узнать больше</a>
-				<div class="slider1-logo">
-					<img src="img/nerds-index-slide1.png" alt="slider-1">
+			<div class="slider-1 clearfix">
+				<div class="slider-logo">
+					<img src="img/nerds-index-slide1.png" alt="slider-1" width="760" height="431">
+				</div>
+				<div class="slider-text">
+					<h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
+					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+					<a href="#" class="slider-btn"><span>Узнать больше</span></a>
 				</div>
 			</div>
-			<!-- /.slider-1 -->
-			<div class="slider-2">
-				<h2 class="slider-title">Любим математику как никто другой</h2>
-				<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-				<a href="#">Узнать больше</a>
-				<div class="slider1-logo">
-					<img src="img/nerds-index-slide2.png" alt="slider-2">
+			<div class="slider-2 clearfix">
+				<div class="slider-logo">
+					<img src="img/nerds-index-slide2.png" alt="slider-2" width="760" height="431">
+				</div>
+				<div class="slider-text">
+					<h2 class="slider-title">Любим математику как никто другой</h2>
+					<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+					<a href="#" class="slider-btn"><span>Узнать больше</span></a>
 				</div>
 			</div>
-			<!-- /.slider-2 -->
-			<div class="slider-3">
-				<h2 class="slider-title">Только ночь, только хардкор</h2>
-				<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-				<a href="#"></a>
-				<div class="slider1-logo">
-					<img src="img/nerds-index-slide3.png" alt="slider-3">
+			<div class="slider-3 clearfix">
+				<div class="slider-logo">
+					<img src="img/nerds-index-slide3.png" alt="slider-3" width="760" height="431">
+				</div>
+				<div class="slider-text">
+					<h2 class="slider-title">Только ночь, только хардкор</h2>
+					<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+					<a href="#" class="slider-btn"><span>Узнать больше</span></a>
 				</div>
 			</div>
-			<!-- /.slider-3 -->
 		</div>
-		<!-- /.slider -->
 	</div>
-	<!-- container -->
 </header>
-<!-- /.page-header -->
 <main class="content">
-	<div class="advantages container">
-		<div class="advantages-item">
-			<div class="advantages-item-logo">
-				<img src="img/illustration-1.jpg" alt="illustration-1">
+	<div class="container">
+		<div class="advantages clearfix">
+			<div class="advantages-item">
+				<div class="advantages-item-logo">
+					<img src="img/illustration-1.jpg" width="300" height="146" alt="illustration-1">
+				</div>
+				<h3 class="advantages-item-title">Веб-сайты</h3>
+				<p class="advantages-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+				<a href="#" class="advantages-btn advantages-btn-red"><span>Заказать</span></a>
 			</div>
-			<b class="advantages-item-title">Веб-сайты</b>
-			<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-			<div class="advantages-item-btn">
-				<a href="#">Заказать</a>
+			<div class="advantages-item">
+				<div class="advantages-item-logo">
+					<img src="img/illustration-2.jpg" width="300" height="146" alt="illustration-2">
+				</div>
+				<h3 class="advantages-item-title">Приложения</h3>
+				<p class="advantages-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+				<a href="#" class="advantages-btn advantages-btn-green"><span>Заказать</span></a>
 			</div>
-		</div>
-		<div class="advantages-item">
-			<div class="advantages-item-logo">
-				<img src="img/illustration-2.jpg" alt="illustration-2">
-			</div>
-			<b class="advantages-item-title">Приложения</b>
-			<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-			<div class="advantages-item-btn">
-				<a href="#">Заказать</a>
-			</div>
-		</div>
-		<div class="advantages-item">
-			<div class="advantages-item-logo">
-				<img src="img/illustration-3.jpg" alt="illustration-3">
-			</div>
-			<b class="advantages-item-title">Презентации</b>
-			<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-			<div class="advantages-item-btn">
-				<a href="#">Заказать</a>
+			<div class="advantages-item">
+				<div class="advantages-item-logo">
+					<img src="img/illustration-3.jpg" width="300" height="146" alt="illustration-3">
+				</div>
+				<h3 class="advantages-item-title">Презентации</h3>
+				<p class="advantages-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+				<a href="#" class="advantages-btn advantages-btn-yellow"><span>Заказать</span></a>
 			</div>
 		</div>
+		<section class="studio clearfix">
+			<div class="studio-left-block">
+				<h2 class="studio-title">Мы - маленькая но гордая-дизайн студия из Краснодара.</h2>
+				<p class="studio-text">Испаведуем принципы минимализма и чистоты. Ставим математический расчет превыше
+					креатива. Работаем не
+					покладая
+					рук, как роботы.</p>
+				<strong class="studio-second-text">Выполняем заказы на разработку:</strong>
+				<ul class="studio-list-work">
+					<li class="studio-list-item"><span class="studio-dash"></span>Веб-сайтов любой сложности</li>
+					<li class="studio-list-item"><span class="studio-dash"></span>Мобильных приложений для iOS и Android
+					</li>
+					<li class="studio-list-item"><span class="studio-dash"></span>Слайдшоу и видео для корпоративных
+						презентаций
+					</li>
+				</ul>
+			</div>
+			<div class="studio-right-block">
+				<div class="studio-logo">
+					<img src="img/nerds-illustration.jpg" width="360" height="208" alt="nerds-illustration">
+				</div>
+				<strong class="studio-second-text">С 2004 года любим точность во всем:</strong>
+				<ul class="studio-work-percent">
+					<li>
+						<strong class="work-percent-term">146<span>%</span></strong>
+						<span class="work-percent-definition">Уровень самоотдачи</span>
+					</li>
+					<li>
+						<strong class="work-percent-term">100<span>%</span></strong>
+						<span class="work-percent-definition">Соблюдение сроков</span>
+					</li>
+					<li>
+						<strong class="work-percent-term">50<span>%</span></strong>
+						<span class="work-percent-definition">Минимальная предоплата</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<ul class="works clearfix">
+			<li class="works-block-item"><a href="#"><img src="img/logo-1.png" width="260" height="180"
+			                                              alt="logo-1"></a>
+				<div class="vertical-dash"></div>
+			</li>
+			<li class="works-block-item"><a href="#"><img src="img/logo-2.png" width="260" height="180"
+			                                              alt="logo-2"></a>
+				<div class="vertical-dash"></div>
+			</li>
+			<li class="works-block-item"><a href="#"><img src="img/logo-3.png" width="260" height="180"
+			                                              alt="logo-3"></a>
+				<div class="vertical-dash"></div>
+			</li>
+			<li class="works-block-item"><a href="#"><img src="img/logo-4.png" width="260" height="180"
+			                                              alt="logo-4"></a>
+			</li>
+		</ul>
 	</div>
-	<section class="studio container">
-		<div class="studio-left-block">
-			<h2 class="studio-title">Мы - маленькая но гордая-дизайн студия из Краснодара.</h2>
-			<p>Испаведуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
-				покладая
-				рук, как роботы.</p>
-			<strong>Выполняем заказы на разработку:</strong>
-			<ul>
-				<li>&mdash; Веб-сайтов любой сложности</li>
-				<li>&mdash; Мобильных приложений для iOS и Android</li>
-				<li>&mdash; Слайдшоу и видео для корпоративных презентаций</li>
-			</ul>
-		</div>
-		<div class="studio-right-block">
-			<div class="studio-logo">
-				<img src="img/nerds-illustration.jpg" alt="nerds-illustration">
+	<section class="contacts">
+		<div class="map">
+			<!--<img src="img/map.png" width="1440" height="416">--></div>
+		<div class="container">
+			<div class="map-item">
+				<div class="contact">
+					<h3 class="contact-title">NЁRDS DESIGN STUDIO</h3>
+					<p class="contact-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<span class="contact-tel">тел. +7 (812) 275-75-75</span>
+					<a href="#" class="contact-btn">напишите нам</a>
+				</div>
+				<!--<img src="img/map-marker.png" class="marker" alt="map-marker"> -->
 			</div>
-			<strong>С 2004 года любим точность во всем:</strong>
-			<dl>
-				<dt class="studio-bold-text">146%</dt>
-				<dd>Уровень самоотдачи</dd>
-				<dt class="studio-bold-text">100%</dt>
-				<dd>Соблюдение сроков</dd>
-				<dt class="studio-bold-text">50%</dt>
-				<dd>Минимальная предоплата</dd>
-			</dl>
-		</div>
-		<div class="studio-bottom-block">
-			<ul>
-				<li class="bottom-block-item"><a href="#"><img src="img/logo-1.png" alt="logo-1"></a></li>
-				<li class="bottom-block-item"><a href="#"><img src="img/logo-2.png" alt="logo-2"></a></li>
-				<li class="bottom-block-item"><a href="#"><img src="img/logo-3.png" alt="logo-3"></a></li>
-				<li class="bottom-block-item"><a href="#"><img src="img/logo-4.png" alt="logo-4"></a></li>
-			</ul>
-		</div>
-	</section>
-	<section class="contacts container">
-		<div class="contact">
-			<h3 class="contact-title">NЁRDS DESIGN STUDIO</h3>
-			<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-			<span>тел. +7 (812) 275-75-75</span>
-			<div class="contact-btn">
-				<a href="#">напишите нам</a>
-			</div>
-		</div>
-		<div class="contact-marker">
-			<img src="img/map-marker.png" alt="map-marker">
 		</div>
 	</section>
 </main>
-<footer class="page-footer container">
-	<div class="footer-social">
-		<ul class="social">
-			<li class="social-vk"><a href="#">vk</a></li>
+<footer class="page-footer">
+	<div class="container">
+		<ul class="social-list clearfix">
+			<li><a class="social social-vk" href="#"></a></li>
 			<!-- /.social-vk -->
-			<li class="social-fb"><a href="#">fb</a></li>
+			<li><a class="social social-fb" href="#"></a></li>
 			<!-- /.social-fb -->
-			<li class="social-ig"><a href="#">ig</a></li>
+			<li><a class="social social-ig" href="#"></a></li>
 			<!-- /.social-ig -->
 		</ul>
-	</div>
-	<div class="footer-text">
-		<h3 class="footer-title">Давайте дружить, это выгодно!</h3>
-		<p>Скидка 10% для друзей из социальных сетей.</p>
+		<div class="footer-text">
+			<h3 class="footer-title">Давайте дружить, это выгодно!</h3>
+			<p>Скидка 10% для друзей из социальных сетей.</p>
+		</div>
 	</div>
 </footer>
 <!-- /.footer -->
