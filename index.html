@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic"  rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
 	<!--  Центровщик -->
 	<div class="container">
-		<nav class="top-menu">
+		<nav class="top-menu clearfix">
 			<a class="top-menu-logo"><img src="img/nerds-logo.png" alt="Nerds" width="160" height="65"></a>
 			<ul class="top-menu-list clearfix">
-				<li class="top-menu-item"><a class="active">Студия</a></li>
+				<li class="top-menu-item"><a class="active"><span>Студия</span></a></li>
 				<li class="top-menu-item"><a href="pages/customers.html">Клиенты</a></li>
 				<li class="top-menu-item"><a href="pages/market.html">Магазин</a></li>
 				<li class="top-menu-item"><a href="pages/contact.html">Контакты</a></li>
@@ -23,34 +23,38 @@
 			</div>
 		</nav>
 		<div class="slider">
-			<div class="slider-1 clearfix">
-				<div class="slider-logo">
-					<img src="img/nerds-index-slide1.png" alt="slider-1" width="760" height="431">
-				</div>
-				<div class="slider-text">
-					<h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
-					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-					<a href="#" class="slider-btn"><span>Узнать больше</span></a>
-				</div>
+			<input type="radio" id="btn-1" name="toggle" checked>
+			<input type="radio" id="btn-2" name="toggle">
+			<input type="radio" id="btn-3" name="toggle">
+			<div class="slider-controls">
+				<label for="btn-1"></label>
+				<label for="btn-2"></label>
+				<label for="btn-3"></label>
 			</div>
-			<div class="slider-2 clearfix">
-				<div class="slider-logo">
-					<img src="img/nerds-index-slide2.png" alt="slider-2" width="760" height="431">
+			<div class="slides">
+				<div class="slide">
+					<div class="slide-text">
+						<div class="slide-title">Долго, дорого, скрупулезно</div>
+						<p>Математически выверенный дизайн<br>
+							для вашего сайта или мобильного приложения.</p>
+						<a class="btn" href="#">Узнать больше</a>
+					</div>
 				</div>
-				<div class="slider-text">
-					<h2 class="slider-title">Любим математику как никто другой</h2>
-					<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-					<a href="#" class="slider-btn"><span>Узнать больше</span></a>
+				<div class="slide">
+					<div class="slide-text">
+						<div class="slide-title">Любим математику как никто другой</div>
+						<p>Математически выверенный дизайн<br>
+							для вашего сайта или мобильного приложения.</p>
+						<a class="btn" href="#">Узнать больше</a>
+					</div>
 				</div>
-			</div>
-			<div class="slider-3 clearfix">
-				<div class="slider-logo">
-					<img src="img/nerds-index-slide3.png" alt="slider-3" width="760" height="431">
-				</div>
-				<div class="slider-text">
-					<h2 class="slider-title">Только ночь, только хардкор</h2>
-					<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-					<a href="#" class="slider-btn"><span>Узнать больше</span></a>
+				<div class="slide">
+					<div class="slide-text">
+						<div class="slide-title">Только ночь, только хардкор</div>
+						<p>Математически выверенный дизайн<br>
+							для вашего сайта или мобильного приложения.</p>
+						<a class="btn" href="#">Узнать больше</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -86,7 +90,7 @@
 		</div>
 		<section class="studio clearfix">
 			<div class="studio-left-block">
-				<h2 class="studio-title">Мы - маленькая но гордая-дизайн студия из Краснодара.</h2>
+				<h2 class="studio-title">Мы -- маленькая но гордая - дизайн студия из Краснодара.</h2>
 				<p class="studio-text">Испаведуем принципы минимализма и чистоты. Ставим математический расчет превыше
 					креатива. Работаем не
 					покладая
@@ -156,7 +160,7 @@
 		</div>
 	</section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer clearfix">
 	<div class="container">
 		<ul class="social-list clearfix">
 			<li><a class="social social-vk" href="#"></a></li>
@@ -173,5 +177,24 @@
 	</div>
 </footer>
 <!-- /.footer -->
+<div class="modal-content">
+	<h1 class="modal-title">Напишите нам</h1>
+	<button class="modal-close-element"></button>
+	<form class="modal-form clearfix">
+		<div class="modal-form-item">
+			<label for="name">Ваше имя:</label><br>
+			<input type="text" id="name" placeholder="Представтесь, пожалуйста" autofocus required>
+		</div>
+		<div class="modal-form-item">
+			<label for="email">Ваше e-mail:</label><br>
+			<input type="email" id="email" placeholder="Для отправки ответа" required>
+		</div>
+		<label for="text">Текст письма:</label><br>
+		<textarea id="text" placeholder="В свободной форме" cols="10"></textarea>
+		<a href="#" class="send-form">Отправить</a>
+	</form>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

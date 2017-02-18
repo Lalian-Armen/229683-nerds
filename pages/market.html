@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic"  rel="stylesheet">
 	<link href="../css/style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
@@ -15,7 +15,7 @@
 			<ul class="top-menu-list clearfix">
 				<li class="top-menu-item"><a href="../index.html">Студия</a></li>
 				<li class="top-menu-item"><a href="#">Клиенты</a></li>
-				<li class="top-menu-item"><a class="active">Магазин</a></li>
+				<li class="top-menu-item"><a class="active"><span>Магазин</span></a></li>
 				<li class="top-menu-item"><a href="#">Контакты</a></li>
 			</ul>
 			<div class="top-menu-basket">
@@ -43,9 +43,9 @@
 				<fieldset class="filter-mesh">
 					<legend>Сетка:</legend>
 					<ul>
-						<li><input type="radio" id="mesh-adaptive"><label for="mesh-adaptive">Адаптивная</label></li>
-						<li><input type="radio" id="mesh-fixed"><label for="mesh-fixed">Фиксированная</label></li>
-						<li><input type="radio" id="mesh-rubber"><label for="mesh-rubber">Резиновая</label></li>
+						<li><input type="radio" id="mesh-adaptive" name="website" value="1"><label for="mesh-adaptive">Адаптивная</label></li>
+						<li><input type="radio" id="mesh-fixed" name="website" value="2"><label for="mesh-fixed">Фиксированная</label></li>
+						<li><input type="radio" id="mesh-rubber" name="website" value="3"><label for="mesh-rubber">Резиновая</label></li>
 					</ul>
 				</fieldset>
 				<fieldset class="filter-features">
@@ -63,94 +63,122 @@
 			<!-- /.filter -->
 			<div class="market-item clearfix">
 				<div class="templates">
-					<div class="templates-sort">
-						<b class="templates-sort-title">Сортировать</b>
+					<div class="templates-sort clearfix">
+						<b class="templates-sort-title">Сортировать:</b>
 						<div class="templates-sort-value">
-							<button class="sort-btn sort-active">По цене</button>
-							<button class="sort-btn">По типу</button>
-							<button class="sort-btn">По названию</button>
+							<a href="#" class="sort-btn sort-active">По цене</a>
+							<a href="#" class="sort-btn">По типу</a>
+							<a href="#" class="sort-btn">По названию</a>
+							<a href="#" class="sort-btn triangle"></a>
 						</div>
 						<!-- /.price-sort-value -->
 					</div>
 					<!-- /.price-sort -->
 					<div class="templates-item">
 						<div class="template-item">
+							<ul class="market-item-header clearfix">
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+							</ul>
 							<img src="../img/img-sedona.jpg" alt="Sedona" width="360" height="576">
-							<div class="templates-item-hover">
+							<div class="template-item-hover">
 								<b class="item-hover-title">Sedona</b>
 								<p>Информационный сайт для туристов</p>
 								<div class="item-hover-btn">
-									<a href="#">9 900 руб</a>
+									<a href="#">9 900 руб.</a>
 								</div>
 							</div>
 						</div>
 						<div class="template-item">
+							<ul class="market-item-header clearfix">
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+							</ul>
+							<!-- /.market-item-header -->
 							<img src="../img/img-pink.jpg" alt="Pink" width="360" height="576">
-							<div class="templates-item-hover">
+							<div class="template-item-hover">
 								<b class="item-hover-title">Pink APP</b>
 								<p>Продуктовый лендинг приложения для iOS и Android</p>
 								<div class="item-hover-btn">
-									<a href="#">9 900 руб</a>
+									<a href="#">9 900 руб.</a>
 								</div>
 							</div>
 						</div>
 						<div class="template-item">
+							<ul class="market-item-header clearfix">
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+							</ul>
+							<!-- /.market-item-header -->
 							<img src="../img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
-							<div class="templates-item-hover">
+							<div class="template-item-hover">
 								<b class="item-hover-title">Barbershop</b>
 								<p>Сайт салоны красоты. Для мужчин, да.</p>
 								<div class="item-hover-btn">
-									<a href="#">9 900 руб</a>
+									<a href="#">9 900 руб.</a>
 								</div>
 							</div>
 						</div>
 						<div class="template-item">
+							<ul class="market-item-header clearfix">
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+							</ul>
+							<!-- /.market-item-header -->
 							<img src="../img/img-mishka.jpg" alt="MISHKA" width="360" height="576">
-							<div class="templates-item-hover">
+							<div class="template-item-hover">
 								<b class="item-hover-title">MISHKA</b>
 								<p>Интернет-магазин вязаных игрушек</p>
 								<div class="item-hover-btn">
-									<a href="#">9 900 руб</a>
+									<a href="#">9 900 руб.</a>
 								</div>
 							</div>
 						</div>
 						<div class="template-item">
+							<ul class="market-item-header clearfix">
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+							</ul>
+							<!-- /.market-item-header -->
 							<img src="../img/img-aplus.jpg" alt="A Plus" width="360" height="576">
-							<div class="templates-item-hover">
+							<div class="template-item-hover">
 								<b class="item-hover-title">A Plus</b>
 								<p>Лендинг курсов повышения квалификации</p>
 								<div class="item-hover-btn">
-									<a href="#">9 900 руб</a>
+									<a href="#">9 900 руб.</a>
 								</div>
 							</div>
 						</div>
 						<div class="template-item">
+							<ul class="market-item-header clearfix">
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+								<li class="market-item-element"></li>
+							</ul>
+							<!-- /.market-item-header -->
 							<img src="../img/img-kvast.jpg" alt="КВАСТ" width="360" height="576">
-							<div class="templates-item-hover">
+							<div class="template-item-hover">
 								<b class="item-hover-title">КВАСТ</b>
 								<p>Промо-сайт производителя крафтового кваса</p>
 								<div class="item-hover-btn">
-									<a href="#">9 900 руб</a>
+									<a href="#">9 900 руб.</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- /.templates-item -->
-				<div class="template-page">
-					<ul>
-						<li>
-							<button class="template-page-item template-page-active">1</button>
-						</li>
-						<li>
-							<button class="template-page-item">2</button>
-						</li>
-						<li>
-							<button class="template-page-item">3</button>
-						</li>
-					</ul>
-					<button class="template-page-btn">Следующая</button>
-				</div>
+				<ul class="template-page clearfix">
+					<li class="template-page-item template-page-active"><a href="#">1</a></li>
+					<li class="template-page-item"><a href="#">2</a></li>
+					<li class="template-page-item"><a href="#">3</a></li>
+					<li class="template-page-item template-page-next"><a href="#">Следующая</a></li>
+				</ul>
 			</div>
 		</div>
 		<!-- /.templates -->
@@ -188,6 +216,24 @@
 		</div>
 	</div>
 </footer>
-<!-- /.footer -->
+<div class="modal-content">
+	<h1 class="modal-title">Напишите нам</h1>
+	<button class="modal-close-element"></button>
+	<form class="modal-form clearfix">
+		<div class="modal-form-item">
+			<label for="name">Ваше имя:</label><br>
+			<input type="text" id="name" placeholder="Представтесь, пожалуйста" autofocus required>
+		</div>
+		<div class="modal-form-item">
+			<label for="email">Ваше e-mail:</label><br>
+			<input type="email" id="email" placeholder="Для отправки ответа" required>
+		</div>
+		<label for="text">Текст письма:</label><br>
+		<textarea id="text" placeholder="В свободной форме" readonly></textarea>
+		<a href="#" class="send-form">Отправить</a>
+	</form>
+</div>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
